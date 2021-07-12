@@ -1,0 +1,174 @@
+{
+  "name": "handsdown",
+  "productName": "Handsdown - Markdown Editor and Visualizer",
+  "version": "1.0.0",
+  "keywords": [
+    "handsdown",
+    "markdown editor",
+    "markdown visualizer"
+  ],
+  "description": "Handsdown is a markdown editor and visualizer, all rolled into one.",
+  "author": "Sohail Saha",
+  "license": "MIT",
+  "private": false,
+  "homepage": "./",
+  "main": "public/electron.js",
+  "dependencies": {
+    "@electron-forge/publisher-github": "^6.0.0-beta.57",
+    "@material-ui/core": "^4.12.0",
+    "@material-ui/icons": "^4.11.2",
+    "@testing-library/jest-dom": "^5.11.4",
+    "@testing-library/react": "^11.1.0",
+    "@testing-library/user-event": "^12.1.10",
+    "concurrently": "^6.2.0",
+    "cross-env": "^7.0.3",
+    "dompurify": "^2.3.0",
+    "electron-icon-builder": "^2.0.1",
+    "electron-is-dev": "^2.0.0",
+    "electron-reload": "^1.5.0",
+    "electron-squirrel-startup": "^1.0.0",
+    "fs": "^0.0.1-security",
+    "marked": "^2.1.3",
+    "react": "^17.0.2",
+    "react-custom-scrollbars": "^4.2.1",
+    "react-dom": "^17.0.2",
+    "react-scripts": "4.0.3",
+    "styled-components": "^5.3.0",
+    "use-merge-state": "^1.2.3",
+    "wait-on": "^6.0.0",
+    "web-vitals": "^1.0.1"
+  },
+  "scripts": {
+    "start": "cross-env BROWSER=none react-scripts start && electron-forge start",
+    "dev": "concurrently -k \"wait-on tcp:localhost:3000 && electron --no-sandbox .\" \"cross-env HOST=localhost yarn start\"",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject",
+    "package": "react-scripts build && electron-forge package --arch x64 && electron-forge package --arch ia32",
+    "publish": "electron-forge publish",
+    "make": "react-scripts build && electron-forge make --arch x64 && electron-forge make --arch ia32",
+    "make-x86": "react-scripts build && electron-forge make --arch ia32",
+    "make-x64": "react-scripts build && electron-forge make --arch x64",
+    "make-all": "react-scripts build && electron-forge make --arch x64 --platform linux && electron-forge make --arch ia32 --platform linux && electron-forge make --arch x64 --platform win32 && electron-forge make --arch ia32 --platform win32 && electron-forge make --arch x64 --platform darwin && electron-forge make --arch ia32 --platform darwin",
+    "make-linux-x64": "react-scripts build && electron-forge make --arch x64 --platform linux",
+    "make-linux-x86": "react-scripts build && electron-forge make --arch ia32 --platform linux",
+    "make-mac-x64": "react-scripts build && electron-forge make --arch x64 --platform darwin",
+    "make-mac-x86": "react-scripts build && electron-forge make --arch ia32 --platform darwin",
+    "make-win-x64": "react-scripts build && electron-forge make --arch x64 --platform win32",
+    "make-win-x86": "react-scripts build && electron-forge make --arch ia32 --platform win32"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "@electron-forge/cli": "^6.0.0-beta.57",
+    "@electron-forge/maker-deb": "^6.0.0-beta.57",
+    "@electron-forge/maker-dmg": "^6.0.0-beta.57",
+    "@electron-forge/maker-rpm": "^6.0.0-beta.57",
+    "@electron-forge/maker-squirrel": "^6.0.0-beta.57",
+    "@electron-forge/maker-zip": "^6.0.0-beta.57",
+    "electron": "13.1.6"
+  },
+  "config": {
+    "forge": {
+      "packagerConfig": {
+        "name": "handsdown",
+        "executableName": "handsdown",
+        "asar": true,
+        "icon": "./public/icons/all/icon"
+      },
+      "publishers": [
+        {
+          "name": "@electron-forge/publisher-github",
+          "config": {
+            "repository": {
+              "owner": "sohail-saha",
+              "name": "handsdown-markdown-editor-visualizer"
+            }
+          }
+        }
+      ],
+      "makers": [
+        {
+          "name": "@electron-forge/maker-dmg",
+          "platforms": [
+            "darwin"
+          ],
+          "config": {
+            "summary": "Handsdown is a markdown editor and visualizer.",
+            "icon": "./public/icons/mac/icon.icns"
+          }
+        },
+        {
+          "name": "@electron-forge/maker-squirrel",
+          "platforms": [
+            "win32"
+          ],
+          "config": {
+            "summary": "Handsdown is a markdown editor and visualizer.",
+            "name": "Handsdown",
+            "noDelta": true,
+            "setupIcon": "./public/icons/win/icon.ico",
+            "loadingGif": "./public/assets/loading.gif"
+          }
+        },
+        {
+          "name": "@electron-forge/maker-zip",
+          "platforms": [
+            "darwin",
+            "linux"
+          ]
+        },
+        {
+          "name": "@electron-forge/maker-deb",
+          "platforms": [
+            "linux"
+          ],
+          "config": {
+            "name": "handsdown",
+            "summary": "Handsdown is a markdown editor and visualizer.",
+            "options": {
+              "maintainer": "Sohail Saha",
+              "icon": "./public/icons/png/64x64.png",
+              "description": "Handsdown is a markdown editor and visualizer",
+              "genericName": "Text Editor",
+              "productName": "Handsdown - Markdown Editor and Visualizer"
+            }
+          }
+        },
+        {
+          "name": "@electron-forge/maker-rpm",
+          "platforms": [
+            "linux"
+          ],
+          "config": {
+            "name": "handsdown",
+            "summary": "Handsdown is a markdown editor and visualizer.",
+            "options": {
+              "maintainer": "Sohail Saha",
+              "icon": "./public/icons/png/64x64.png",
+              "description": "Handsdown is a markdown editor and visualizer",
+              "genericName": "Text Editor",
+              "productName": "Handsdown - Markdown Editor and Visualizer"
+            }
+          }
+        }
+      ]
+    }
+  }
+}
