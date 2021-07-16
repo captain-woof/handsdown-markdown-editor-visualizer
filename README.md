@@ -1,5 +1,5 @@
 <p align="center">
-  <img width="150" height="150" src="https://drive.google.com/uc?export=download&id=1vkPo6PHKzK49ScFXkw0iU6o5rU9Exchx">
+  <img width="150" height="150" src="https://drive.google.com/uc?export=download&id=15KBeLHCbWNstvzqA177RLlOBBFvZx0jB">
 </p>
 
 # Handsdown - Markdown Editor & Visualizer
@@ -19,7 +19,7 @@ Handsdown is a cross-platform markdown editor and visualizer, all rolled into on
 ### Features
 
 <p align="center">
-  <img width="501.5" height="280.5" src="https://drive.google.com/uc?export=download&id=1SCVpPyp4IiKSyEzSzzD8krF-hwYqADDC">
+  <img width="501.5" height="280.5" src="https://drive.google.com/uc?export=download&id=1KACTodhuYG981LJlDiRDtLEWd4vzu0iw">
 </p>
 
 - Edit and simultaneously see your markdown visualized, side-by-side.
