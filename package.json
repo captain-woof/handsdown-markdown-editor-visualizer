@@ -9,7 +9,7 @@
   ],
   "description": "Handsdown is a markdown editor and visualizer, all rolled into one.",
   "author": "Sohail Saha",
-  "license": "MIT",
+  "license": "GPLv3",
   "private": false,
   "homepage": "./",
   "main": "public/electron.js",
@@ -97,7 +97,7 @@
           "name": "@electron-forge/publisher-github",
           "config": {
             "repository": {
-              "owner": "sohail-saha",
+              "owner": "captain-woof",
               "name": "handsdown-markdown-editor-visualizer"
             }
           }

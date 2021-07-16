@@ -4,7 +4,7 @@
 
 # Handsdown - Markdown Editor & Visualizer
 
-![GitHub top language](https://img.shields.io/github/languages/top/sohail-saha/handsdown-markdown-editor-visualizer?color=%23fcf51c) ![GitHub release (latest by date)](https://img.shields.io/github/downloads/sohail-saha/handsdown-markdown-editor-visualizer/latest/total) [![Node.js CI](https://github.com/sohail-saha/handsdown-markdown-editor-visualizer/actions/workflows/node.js.yml/badge.svg?branch=main)](https://github.com/sohail-saha/handsdown-markdown-editor-visualizer/actions/workflows/node.js.yml)
+![GitHub top language](https://img.shields.io/github/languages/top/captain-woof/handsdown-markdown-editor-visualizer?color=%23fcf51c) ![GitHub release (latest by date)](https://img.shields.io/github/downloads/captain-woof/handsdown-markdown-editor-visualizer/latest/total) [![Node.js CI](https://github.com/sohail-saha/handsdown-markdown-editor-visualizer/actions/workflows/node.js.yml/badge.svg?branch=main)](https://github.com/captain-woof/handsdown-markdown-editor-visualizer/actions/workflows/node.js.yml)
 
 ### Table of Contents
 - **[Introduction](#introduction)**
@@ -47,6 +47,6 @@ That's it.
 
 ### Author
 
-**Sohail Saha**
+**Sohail Saha**, *a.k.a CaptainWoof*
 
-![Twitter Follow](https://img.shields.io/twitter/follow/sohail_saha_?style=social)
+![Twitter Follow](https://img.shields.io/twitter/follow/realCaptainWoof?style=social)
