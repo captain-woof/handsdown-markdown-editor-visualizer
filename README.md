@@ -4,7 +4,7 @@
 
 # Handsdown - Markdown Editor & Visualizer
 
-![GitHub top language](https://img.shields.io/github/languages/top/captain-woof/handsdown-markdown-editor-visualizer?color=%23fcf51c) ![GitHub release (latest by date)](https://img.shields.io/github/downloads/captain-woof/handsdown-markdown-editor-visualizer/latest/total) [![Node.js CI](https://github.com/sohail-saha/handsdown-markdown-editor-visualizer/actions/workflows/node.js.yml/badge.svg?branch=main)](https://github.com/captain-woof/handsdown-markdown-editor-visualizer/actions/workflows/node.js.yml)
+![GitHub top language](https://img.shields.io/github/languages/top/captain-woof/handsdown-markdown-editor-visualizer?color=%23fcf51c) ![GitHub release (latest by date)](https://img.shields.io/github/downloads/captain-woof/handsdown-markdown-editor-visualizer/latest/total) [![Node.js CI](https://github.com/captain-woof/handsdown-markdown-editor-visualizer/actions/workflows/node.js.yml/badge.svg)](https://github.com/captain-woof/handsdown-markdown-editor-visualizer/actions/workflows/node.js.yml)
 
 ### Table of Contents
 - **[Introduction](#introduction)**
@@ -28,7 +28,7 @@ Handsdown is a cross-platform markdown editor and visualizer, all rolled into on
 
 ### Installing
 
-Simply go to the [releases](https://github.com/sohail-saha/handsdown-markdown-editor-visualizer) page, lookup the version that suits your system platform and architecture, download it, and install it.
+Simply go to the [releases](https://github.com/captain-woof/handsdown-markdown-editor-visualizer/releases) page, lookup the version that suits your system platform and architecture, download it, and install it.
 
 ### Building from source
 
